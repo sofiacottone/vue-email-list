@@ -36,10 +36,12 @@
 <body>
 
     <div id="app">
-        <div>
-            <ul>
+        <h4 class="text-center mt-4">10 random emails</h4>
+        <div class="d-flex justify-content-center align-items-center mt-4">
+            <ul class="list-unstyled border rounded p-5">
                 <template v-for="email in emailList">
-                    <li v-if="emailList.length === arrayLength"> {{ email }} </li>
+                    <li v-if="emailList.length === arrayLength" class="link-secondary" type="button">
+                        {{ email }} </li>
                 </template>
 
             </ul>
